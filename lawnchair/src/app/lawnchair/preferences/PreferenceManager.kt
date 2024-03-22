@@ -37,7 +37,7 @@ class PreferenceManager private constructor(private val context: Context) : Base
         Unit
     }
 
-    val iconPackPackage = StringPref("pref_iconPackPackage", "", reloadIcons)
+    val iconPackPackage = StringPref("pref_iconPackPackage", "org.materialos.icons", reloadIcons)
     val themedIconPackPackage = StringPref("pref_themedIconPackPackage", "", recreate)
     val allowRotation = BoolPref("pref_allowRotation", false)
     val wrapAdaptiveIcons = BoolPref("prefs_wrapAdaptive", false, recreate)
