@@ -56,7 +56,7 @@
     </string-array>
 
     <!-- Which QSB search provider to use by default -->
-    <string name="config_default_qsb_search_provider_id" translatable="false">startpage</string>
+    <string name="config_default_qsb_search_provider_id" translatable="false">qwant</string>
 
     <!-- Which icon shape to use by default -->
     <string name="config_default_icon_shape" translatable="false">system</string>

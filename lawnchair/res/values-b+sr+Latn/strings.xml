@@ -419,6 +419,7 @@
     <string name="search_pref_result_settings_entry_title">Podešavanje</string>
     <string name="all_apps_search_market_message">Pretražite više aplikacija</string>
     <string name="all_apps_search_startpage_message">Pretražuj pomoću usluge <xliff:g id="startpage">Startpage</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Pretražuj pomoću usluge <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Nije instalirana prodavnica aplikacija ili pregledač.</string>
     <string name="all_apps_search_result_suggestions">Veb</string>
     <string name="all_apps_search_result_contacts_from_device">Kontakti</string>

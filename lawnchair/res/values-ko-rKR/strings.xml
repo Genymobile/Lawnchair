@@ -417,6 +417,7 @@
     <string name="search_pref_result_settings_entry_title">설정 항목</string>
     <string name="all_apps_search_market_message">더 많은 앱 검색하기</string>
     <string name="all_apps_search_startpage_message"><xliff:g id="startpage">Startpage</xliff:g>에서 검색</string>
+    <string name="all_apps_search_qwant_message"><xliff:g id="qwant">Qwant</xliff:g>에서 검색</string>
     <string name="error_no_market_or_browser_installed">앱 스토어나 브라우저가 설치되어 있지 않습니다.</string>
     <string name="all_apps_search_result_suggestions">From the web</string>
     <string name="all_apps_search_result_contacts_from_device">From your contacts</string>

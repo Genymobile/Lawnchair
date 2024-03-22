@@ -38,7 +38,7 @@ class GenerateSearchTarget(private val context: Context) {
     private val marketSearchComponent = resolveMarketSearchActivity()
 
     internal fun getSuggestionTarget(suggestion: String): SearchTargetCompat {
-        val url = getStartPageUrl(suggestion)
+        val url = getQwantUrl(suggestion)
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
         val id = suggestion + url
         val action = SearchActionCompat.Builder(id, suggestion)
@@ -59,7 +59,7 @@ class GenerateSearchTarget(private val context: Context) {
 
     internal fun getRecentKeywordTarget(recentKeyword: RecentKeyword): SearchTargetCompat {
         val value = recentKeyword.getValueByKey("display1") ?: ""
-        val url = getStartPageUrl(value)
+        val url = getQwantUrl(value)
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
         val id = recentKeyword.data.toString() + url
         val action = SearchActionCompat.Builder(id, value)
@@ -175,6 +175,20 @@ class GenerateSearchTarget(private val context: Context) {
         return createSearchTarget(id, action, START_PAGE, extras)
     }
 
+    internal fun getQwantSearchItem(query: String): SearchTargetCompat {
+        val url = getQwantUrl(query)
+        val id = "browser:$query"
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        val action = SearchActionCompat.Builder(id, context.getString(R.string.all_apps_search_qwant_message))
+            .setIcon(Icon.createWithResource(context, R.drawable.ic_qwant))
+            .setIntent(browserIntent)
+            .build()
+        val extras = bundleOf(
+            SearchResultView.EXTRA_HIDE_SUBTITLE to true,
+        )
+        return createSearchTarget(id, action, QWANT, extras)
+    }
+
     internal fun getContactSearchItem(info: ContactInfo): SearchTargetCompat {
         val id = "contact:${info.contactId}${info.number}"
         val contactUri = Uri.withAppendedPath(
@@ -256,6 +270,10 @@ class GenerateSearchTarget(private val context: Context) {
 
     private fun getStartPageUrl(query: String): String {
         return "https://www.startpage.com/do/search?segment=startpage.lawnchair&query=$query&cat=web"
+    }
+
+    private fun getQwantUrl(query: String): String {
+        return "https://www.qwant.com/?q=$query&t=web"
     }
 
     private fun resolveMarketSearchActivity(): ComponentKey? {

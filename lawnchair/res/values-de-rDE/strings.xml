@@ -420,6 +420,7 @@ workspace_increase_max_grid_size_label</string>
     <string name="search_pref_result_settings_entry_title">Einstellungs-Eintrag</string>
     <string name="all_apps_search_market_message">Weitere Apps suchen</string>
     <string name="all_apps_search_startpage_message">Suche bei <xliff:g id="startpage">Startpage</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Suche bei <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Kein Appstore oder Browser installiert.</string>
     <string name="all_apps_search_result_suggestions">Aus dem Internet</string>
     <string name="all_apps_search_result_contacts_from_device">Aus Deinen Kontakten</string>

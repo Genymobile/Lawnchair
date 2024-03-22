@@ -133,6 +133,7 @@ sealed class QsbSearchProvider(
             Bing,
             Brave,
             Startpage,
+            Qwant,
         )
 
         /**

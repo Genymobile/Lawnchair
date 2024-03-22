@@ -418,6 +418,7 @@
     <string name="search_pref_result_settings_entry_title">Entrades de Configuració</string>
     <string name="all_apps_search_market_message">Cerca més aplicacions</string>
     <string name="all_apps_search_startpage_message">Buscar en <xliff:g id="startpage">Startpage</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Buscar en <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">No hi ha una botiga d\'aplicacions O navegador web instal·lat.</string>
     <string name="all_apps_search_result_suggestions">Desde la web</string>
     <string name="all_apps_search_result_contacts_from_device">Des dels teus contactes</string>

@@ -422,6 +422,7 @@
     <string name="search_pref_result_settings_entry_title">مدخل الإعدادات</string>
     <string name="all_apps_search_market_message">البحث عن مزيد من التطبيقات</string>
     <string name="all_apps_search_startpage_message">Search on <xliff:g id="startpage">Startpage</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Search on <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">لا يوجد متجر تطبيقات أو متصفح مثبت.</string>
     <string name="all_apps_search_result_suggestions">من الويب</string>
     <string name="all_apps_search_result_contacts_from_device">من جهات اتصالاتك</string>

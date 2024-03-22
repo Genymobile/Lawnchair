@@ -420,6 +420,7 @@
     <string name="search_pref_result_settings_entry_title">Налаштування запису</string>
     <string name="all_apps_search_market_message">Пошук інших додатків</string>
     <string name="all_apps_search_startpage_message">Шукати в <xliff:g id="Головна сторінка">Головна сторінка</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Шукати в <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Не встановлено жодного магазину додатків або браузера.</string>
     <string name="all_apps_search_result_suggestions">З Інтернету</string>
     <string name="all_apps_search_result_contacts_from_device">З ваших контактів</string>

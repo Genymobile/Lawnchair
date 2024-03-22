@@ -417,6 +417,7 @@
     <string name="search_pref_result_settings_entry_title">Entri Pengaturan</string>
     <string name="all_apps_search_market_message">Cari Lebih Banyak Aplikasi</string>
     <string name="all_apps_search_startpage_message">Cari di <xliff:g id="startpage">Startpage</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Cari di <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Tidak ada toko aplikasi atau browser yang terinstal.</string>
     <string name="all_apps_search_result_suggestions">Dari web</string>
     <string name="all_apps_search_result_contacts_from_device">Dari kontak Anda</string>
