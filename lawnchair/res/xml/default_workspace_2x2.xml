@@ -20,7 +20,7 @@
         launcher:packageName="com.android.deskclock"
         launcher:className="com.android.alarmclock.DigitalAppWidgetProvider"
         launcher:screen="1"
-        launcher:x="1"
+        launcher:x="0"
         launcher:y="0"
         launcher:spanX="2"
         launcher:spanY="2" />
