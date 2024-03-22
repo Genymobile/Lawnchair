@@ -21,9 +21,9 @@
         launcher:className="com.android.alarmclock.DigitalAppWidgetProvider"
         launcher:screen="1"
         launcher:x="0"
-        launcher:y="0"
-        launcher:spanY="2" />
+        launcher:y="-5"
         launcher:spanX="6"
+        launcher:spanY="1" />
 
     <appwidget
         launcher:packageName="com.qwant.liberty"
@@ -31,7 +31,7 @@
         launcher:screen="1"
         launcher:x="0"
         launcher:y="-4"
-        launcher:spanX="4"
+        launcher:spanX="6"
         launcher:spanY="1" />
 
     <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->

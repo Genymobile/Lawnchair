@@ -21,7 +21,7 @@
         launcher:className="com.android.alarmclock.DigitalAppWidgetProvider"
         launcher:screen="1"
         launcher:x="0"
-        launcher:y="0"
+        launcher:y="-5"
         launcher:spanX="4"
         launcher:spanY="1" />
 
