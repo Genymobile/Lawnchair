@@ -40,7 +40,7 @@ class PreferenceManager private constructor(private val context: Context) : Base
     val iconPackPackage = StringPref("pref_iconPackPackage", "org.materialos.icons", reloadIcons)
     val themedIconPackPackage = StringPref("pref_themedIconPackPackage", "", recreate)
     val allowRotation = BoolPref("pref_allowRotation", false)
-    val wrapAdaptiveIcons = BoolPref("prefs_wrapAdaptive", false, recreate)
+    val wrapAdaptiveIcons = BoolPref("prefs_wrapAdaptive", true, recreate)
     val transparentIconBackground = BoolPref("prefs_transparentIconBackground", false, recreate)
     val addIconToHome = BoolPref("pref_add_icon_to_home", true)
     val hotseatColumns = IntPref("pref_hotseatColumns", 4, reloadGrid)
