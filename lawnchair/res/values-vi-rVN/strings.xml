@@ -417,6 +417,7 @@
     <string name="search_pref_result_settings_entry_title">Mục cài đặt</string>
     <string name="all_apps_search_market_message">Tìm thêm ứng dụng</string>
     <string name="all_apps_search_startpage_message">Tìm kiếm trên <xliff:g id="startpage">Startpage</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Tìm kiếm trên <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Không có cửa hàng ứng dụng hay trình duyệt được cài đặt.</string>
     <string name="all_apps_search_result_suggestions">Từ web</string>
     <string name="all_apps_search_result_contacts_from_device">Từ liên lạc của bạn</string>

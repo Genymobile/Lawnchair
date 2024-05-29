@@ -418,6 +418,7 @@
     <string name="search_pref_result_settings_entry_title">Instellingen</string>
     <string name="all_apps_search_market_message">Zoeken naar Meer Apps</string>
     <string name="all_apps_search_startpage_message">Zoeken met <xliff:g id="startpage">Startpagina</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Zoeken met <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Geen appwinkel of browser geïnstalleerd.</string>
     <string name="all_apps_search_result_suggestions">Van het internet</string>
     <string name="all_apps_search_result_contacts_from_device">Uit je contacten</string>

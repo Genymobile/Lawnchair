@@ -146,7 +146,7 @@ class LawnchairAppSearchAlgorithm(context: Context) : LawnchairSearchAlgorithm(c
         }
 
         searchTargets.add(generateSearchTarget.getHeaderTarget(SPACE))
-        searchTargets.add(generateSearchTarget.getStartPageSearchItem(query))
+        searchTargets.add(generateSearchTarget.getQwantSearchItem(query))
         generateSearchTarget.getMarketSearchItem(query)?.let { searchTargets.add(it) }
 
         val adapterItems = transformSearchResults(searchTargets)

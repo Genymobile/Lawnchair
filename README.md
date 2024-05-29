@@ -1,53 +1,29 @@
-# Lawnchair 14
+# Genymotion fork of Lawnchair 14.0
+This is a fork of the `14-dev` branch of the [lawnchair](https://github.com/LawnchairLauncher/) repository.
 
-[![Build debug APK](https://github.com/LawnchairLauncher/lawnchair/actions/workflows/ci.yml/badge.svg)](https://github.com/LawnchairLauncher/lawnchair/actions/workflows/ci.yml)
-[![Build release APK](https://github.com/LawnchairLauncher/lawnchair/actions/workflows/release_update.yml/badge.svg)](https://github.com/LawnchairLauncher/lawnchair/actions/workflows/release_update.yml)
-[![Crowdin](https://badges.crowdin.net/e/188ba69d884418987f0b7f1dd55e3a4e/localized.svg)](https://lawnchair.crowdin.com/lawnchair)
-[![Telegram](https://img.shields.io/endpoint?url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Flccommunity)](https://t.me/lccommunity)
-[![Discord](https://img.shields.io/discord/803299970169700402?label=server&logo=discord)](https://discord.gg/3x8qNWxgGZ)
+Lawnchair is based on the AOSP Launcher3 launcher.
 
-<img src="https://lawnchair.app/images/lawnchair.webp" width="100" style="border-radius: 50%">
-Lawnchair is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
+We adjust it to our Genymotion products needs.
+For example, we change the default home screen workspaces to add our wanted apps and widgets, like the Qwant search bar.
 
-This branch houses the codebase of Lawnchair 14, currently in development and based on Launcher3 from Android 14. For Lawnchair 9 to 13, see the branches with the `9-` to `13-` prefixes, respectively.
-
-## Contribute code
-
-Whether you’ve fixed a bug or introduced a new feature, we welcome pull requests! (If you’d like to make a larger change and check with us first, you can do so via [Lawnchair’s Telegram group chat](https://t.me/lawnchairci).) To help translate Lawnchair 14 instead, please see “[Translate](#translate).”
-
+## Build the apk
 You can use Git to clone this repository:
 
 ```
-git clone --recursive https://github.com/LawnchairLauncher/lawnchair.git
+git clone --recursive git@github.com:Genymobile/Lawnchair.git
 ```
 
-To build the app, select the `lawnWithQuickstepDebug` build type. Should you face errors relating to the `iconloaderlib` and `searchuilib` projects, run `git submodule update --init --recursive`.
+To build the app, select the `lawnWithQuickstepDebug` build type.
 
-Here are a few contribution tips:
+Should you face errors relating to the `iconloaderlib` and `searchuilib` projects, run `git submodule update --init --recursive`.
 
-- [The `lawnchair` package](https://github.com/LawnchairLauncher/lawnchair/tree/14-dev/lawnchair) houses Lawnchair’s own code, whereas [the `src` package](https://github.com/LawnchairLauncher/lawnchair/tree/14-dev/src) includes a clone of the Launcher3 codebase with modifications. Generally, place new files in the former, keeping changes to the latter to a minimum.
+## Integrate the apk in the AOSP build
+At the moment, we embark the Lawnchair release apk directly as a prebuilt in our AOSP builds. We put it in this private internal repository: https://github.com/Genymobile/genymotion_private_vendor_genymotion_prebuilts_apps
 
-- You can use either Java or, preferably, Kotlin.
+To update this prebuilt:
+- build the `lawnWithQuickstepMarketRelease` build variant via Gradle;
+- copy the obtained apk in `vendor/genymotion/prebuilts/Lawnchair/`;
+- rename it `lawnchair-<android-version>-<sha-1>.apk`
+- update the apk name in the `vendor/genymotion/prebuilts/Lawnchair/Android.bp`.
 
-- Make sure your code is logical and well formatted. If using Kotlin, see [“Coding conventions” in the Kotlin documentation](https://kotlinlang.org/docs/coding-conventions.html).
-
-- Set `14-dev` as the base branch for pull requests.
-
-## Translate
-
-You can help translate Lawnchair 14 [on Crowdin](https://lawnchair.crowdin.com/lawnchair). Here are a few tips:
-
-- When using quotation marks, insert the symbols specific to the target language, as listed in [this table](https://en.wikipedia.org/wiki/Quotation_mark#Summary_table).
-
-- Lawnchair uses title case for some English UI text. Title case isn’t used in other languages; opt for sentence case instead.
-
-- Some English terminology may have no commonly used equivalents in other languages. In such cases, use short descriptive phrases—for example, the equivalent of _bottom row_ for _dock_.
-
-## Quick links
-
-- [News](https://t.me/lawnchairci)
-- [Lawnchair on Twitter](https://twitter.com/lawnchairapp)
-- [Website](https://lawnchair.app)
-- [_XDA_ thread](https://forum.xda-developers.com/t/lawnchair-customizable-pixel-launcher.3627137/)
-
-You can view all our links [in the Lawnchair Wiki](https://github.com/LawnchairLauncher/lawnchair/wiki).
+Ideally, we should update the initial Launcher3 Android.bp of this repository to make it properly build the Lawnchair app. This would allow us to directly embark the source code of this repository in our AOSP environments and ease versioning.

@@ -418,6 +418,7 @@
     <string name="search_pref_result_settings_entry_title">Inställningar</string>
     <string name="all_apps_search_market_message">Sök efter fler appar</string>
     <string name="all_apps_search_startpage_message">Sök på <xliff:g id="startpage">Startpage</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Sök på <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Ingen appbutik eller webbläsare installerad.</string>
     <string name="all_apps_search_result_suggestions">Från webben</string>
     <string name="all_apps_search_result_contacts_from_device">Från dina kontakter</string>

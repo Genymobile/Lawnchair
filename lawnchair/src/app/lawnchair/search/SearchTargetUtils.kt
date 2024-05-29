@@ -92,6 +92,7 @@ fun createDividerTarget(): SearchTargetCompat {
 }
 
 const val START_PAGE = "startpage"
+const val QWANT = "qwant"
 const val MARKET_STORE = "marketstore"
 const val SUGGESTION = "suggestion"
 const val HEADER = "header"

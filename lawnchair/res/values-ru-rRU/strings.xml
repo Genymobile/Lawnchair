@@ -420,6 +420,7 @@
     <string name="search_pref_result_settings_entry_title">Запись настроек</string>
     <string name="all_apps_search_market_message">Поиск дополнительных приложений</string>
     <string name="all_apps_search_startpage_message">Искать на <xliff:g id="startpage">Startpage</xliff:g></string>
+    <string name="all_apps_search_qwant_message">Искать на <xliff:g id="qwant">Qwant</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Магазин приложений или браузер не установлены.</string>
     <string name="all_apps_search_result_suggestions">Из Интернета</string>
     <string name="all_apps_search_result_contacts_from_device">Из ваших контактов</string>
